@@ -12,6 +12,24 @@ Paper reading：[TrackNetV2论文记录与pytorch复现](https://zhuanlan.zhihu.
 
 
 
+## Repository Structure
+
+This repository is organized into several main components to support training,
+inference, evaluation, and deployment of TrackNetV2.
+
+- `train.py`: Entry script for model training.
+- `detect.py`: Runs inference on input videos and visualizes tracking results.
+- `val.py`: Evaluates model performance on validation data.
+- `model/`: Contains the TrackNetV2 network architecture implementation.
+- `tools/`: Scripts for dataset processing, including frame generation.
+- `deploy/`: Example implementation for server-client based deployment.
+- `data/`: Dataset configuration files.
+- `tf2torch/`: Resources for converting TensorFlow weights into PyTorch format.
+
+
+
+
+
 ## Inference with pytorch weights converted from tensorflow weights:
 
 ```shell
